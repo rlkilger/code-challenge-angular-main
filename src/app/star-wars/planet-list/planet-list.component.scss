@@ -1,0 +1,18 @@
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  color: #495057;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: gray;
+}

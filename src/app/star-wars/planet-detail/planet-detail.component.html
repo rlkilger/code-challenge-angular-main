@@ -1,0 +1,23 @@
+<div class="container">
+  <p-card>
+    <h2>{{ planet.name }}</h2>
+    <p-divider></p-divider>
+    <ul>
+      <li>Rotation Period: {{ planet.rotation_period }}</li>
+      <li>Orbital Period: {{ planet.orbital_period }}</li>
+      <li>Diameter: {{ planet.diameter }}</li>
+      <li>Climate: {{ planet.climate }}</li>
+      <li>Gravity: {{ planet.gravity }}</li>
+      <li>Terrain: {{ planet.terrain }}</li>
+      <li>Surface Water: {{ planet.surface_water }}</li>
+      <li>Population: {{ planet.population }}</li>
+      <p-divider></p-divider>
+      <li><a class="link">Residents of {{ planet.name }}</a></li>
+      <li><a class="link">Films featuring {{ planet.name }}</a></li>
+    </ul>
+    <p-divider></p-divider>
+    <div>
+      <a routerLink="/" class="link">Back to list of planets</a>
+    </div>
+  </p-card>
+</div>

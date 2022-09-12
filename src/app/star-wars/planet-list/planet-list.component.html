@@ -1,0 +1,11 @@
+<div class="container">
+  <p-card>
+    <ul class="planet-list">
+      <li *ngFor="let planet of listOfPlanets">
+        <a [routerLink]="['planet-details', planet.name]" class="link">{{ planet.name }}</a>
+        <p-divider></p-divider>
+      </li>
+    </ul>
+  </p-card>
+</div>
+<p-paginator [rows]="10" [totalRecords]="100"></p-paginator>
