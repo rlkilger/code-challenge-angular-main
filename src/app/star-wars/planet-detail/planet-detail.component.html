@@ -1,8 +1,8 @@
-<div class="container">
+<div class="planet-detail__container">
   <p-card>
-    <h2>{{ planet.name }}</h2>
+    <h2 class="planet-detail__title">{{ planet.name }}</h2>
     <p-divider></p-divider>
-    <ul>
+    <ul class="planet-detail__ul">
       <li>Rotation Period: {{ planet.rotation_period }}</li>
       <li>Orbital Period: {{ planet.orbital_period }}</li>
       <li>Diameter: {{ planet.diameter }}</li>
@@ -12,12 +12,12 @@
       <li>Surface Water: {{ planet.surface_water }}</li>
       <li>Population: {{ planet.population }}</li>
       <p-divider></p-divider>
-      <li><a class="link">Residents of {{ planet.name }}</a></li>
-      <li><a class="link">Films featuring {{ planet.name }}</a></li>
+      <li><a class="planet-detail__link">Residents of {{ planet.name }}</a></li>
+      <li><a class="planet-detail__link">Films featuring {{ planet.name }}</a></li>
     </ul>
     <p-divider></p-divider>
     <div>
-      <a routerLink="/" class="link">Back to list of planets</a>
+      <a class="planet-detail__link" routerLink="/">Back to planets</a>
     </div>
   </p-card>
 </div>

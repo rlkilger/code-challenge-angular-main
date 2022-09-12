@@ -1,8 +1,8 @@
-<div class="container">
+<div class="planet-list__container">
   <p-card>
-    <ul class="planet-list">
+    <ul class="planet-list__ul">
       <li *ngFor="let planet of listOfPlanets">
-        <a [routerLink]="['planet-details', planet.name]" class="link">{{ planet.name }}</a>
+        <a class="planet-list__link"[routerLink]="['planet-details', planet.name]">{{ planet.name }}</a>
         <p-divider></p-divider>
       </li>
     </ul>

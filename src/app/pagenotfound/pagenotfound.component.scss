@@ -1,13 +1,21 @@
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  text-align: center;
-}
-
-img {
-  height: 300px;
-}
-
-h2 {
-  font-family: 'Russo One', sans-serif;
+.pagenotfound {
+  &__container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  &__image {
+    height: 300px;
+  }
+  &__title {
+    font-family: 'Russo One', sans-serif;
+  }
+  &__link {
+    font-family: 'Russo One', sans-serif;
+    color: #1C1E21;
+    //text-decoration: none;
+    &:hover {
+      color: gray;
+    }
+  }
 }
